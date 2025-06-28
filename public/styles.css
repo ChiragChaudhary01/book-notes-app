@@ -8,13 +8,13 @@ header {
     padding: 0 2.5vw;
     display: flex;
     justify-content: space-between;
-    height: 7vh;
+    height: 63px;
     /* border-bottom: solid rgba(66, 66, 66, 0.137) 2px; */
     align-items: center;
     box-shadow: 0px 4px 4px 0 rgba(0, 30, 43, 0.1);
 }
 
-header a{
+header a {
     text-decoration: none;
     color: black;
     font-weight: 700;
@@ -29,7 +29,7 @@ header .rightNav {
     gap: 2vw;
 }
 
-.rightNav a{
+.rightNav a {
     font-weight: 100;
 }
 
@@ -55,9 +55,6 @@ header .rightNav img {
 .books {
     display: flex;
     flex-direction: column;
-    height: 290px;
-    width: 160px;
-    /* padding: 10px; */
     border-radius: 10px;
 }
 
@@ -66,7 +63,7 @@ header .rightNav img {
     line-height: 8px;
 }
 
-.bookData a{
+.bookData a {
     text-decoration: none;
     color: black;
 }
@@ -76,16 +73,15 @@ header .rightNav img {
 }
 
 .bookBack {
-    height: 238px;
-    /* background-color: rgba(209, 206, 206, 0.212); */
-    width: 165px;
+    /* height: 238px;
+    width: 165px; */
     border-radius: 10px;
 }
 
 .books img {
     height: 190px;
     width: 70%;
-    margin: 3vh;
+    margin: 27px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
     /* Force all to match height */
     /* object-fit: cover; */
@@ -111,7 +107,7 @@ header .rightNav img {
     justify-content: left;
     /* align-items: center; */
     /* background-color: blue; */
-    width: 25vw;
+    width: 360px;
     gap: 1.5vh;
     /* height: 70vh; */
 }
@@ -128,7 +124,7 @@ header .rightNav img {
     /* height: 60vh; */
 }
 
-.mainRegister form div{
+.mainRegister form div {
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -162,12 +158,12 @@ header .rightNav img {
 .mainRegister form .buttons {
     flex-direction: row;
     justify-content: space-around;
-    padding: 2vh 0;
+    padding: 2vh 2vw;
 }
 
-button{
-    height: 4vh;
-    padding: 1vh 1vw;
+button {
+    /* height: 36px; */
+    padding: 1.5vh 2vw;
     border-radius: 50px;
     background-color: rgba(137, 137, 245, 0.459);
     border: none;
@@ -180,13 +176,13 @@ button{
 }
 
 .imgView {
-    margin: 5vh;
-    width: 24vw;
+    margin: 5vh 2.8vw;
+    width: 81%;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
 }
 
 .mainBaapview {
-    padding: 1vh 15vw ;
+    padding: 1vh 15vw;
 }
 
 .imgBaapView {
@@ -200,11 +196,108 @@ button{
 }
 
 .btn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Tablets (portrait and smaller) */
+@media (max-width: 1024px) {
+    .mainBaap {
+        padding: 0 15vw;
+    }
+
+    .books {
+        /* width: 30%; */
+    }
+
+    .mainRegister {
+        width: 70vw;
+    }
+
+    .imgBaapView {
+        width: 69vw;
+    }
+
+    .imgView {
+        margin: 6.5% 4.3vw;
+        width: 60vw;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 425px) {
+    header {
+        /* flex-direction: column; */
+        height: auto;
+        padding: 1vh 2.5vw;
+    }
+
+    .rightNav {
+        /* flex-direction: column; */
+        gap: 1vh;
+        margin-top: 1vh;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .mainBaap {
+        padding: 0 5vw;
+    }
+
+    .books {
+        max-width: 125px;
+    }
+
+    .bookBack {
+        /* height: 180px;
+        width: 130px; */
+        border-radius: 10px;
+    }
+
+    .mainBaapview {
+    padding: 1vh 7vw;
+    }
+
+    .books img {
+        height: 81%;
+        width: 80px;
+        margin: 23px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+        /* object-fit: cover; */
+    }
+
+    .main {
+        gap: 3vh;
+    }
+
+    .mainBaapRegister {
+        padding: 5vh 5vw;
+    }
+
+    .mainRegister {
+        width: 90vw;
+    }
+
+    /* .imgBaapView{
+        width: 60vw;
+    } */
+
+    .imgView {
+        width: 60vw;
+    }
+
+    button,
+    .btn {
+        width: 55px;
+        font-size: 10px;
+        padding: 5px;
+        text-align: center;
+    }
 }
