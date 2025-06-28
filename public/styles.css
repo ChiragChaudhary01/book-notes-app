@@ -49,19 +49,16 @@ header .rightNav img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0.5vw;
-    /* background-color: brown; */
+    gap: 30px;
 }
 
 .books {
     display: flex;
     flex-direction: column;
-    gap: -100px;
     height: 290px;
-    width: 17%;
-    padding: 10px;
+    width: 160px;
+    /* padding: 10px; */
     border-radius: 10px;
-    /* text-align: center; */
 }
 
 .bookData {
@@ -79,9 +76,9 @@ header .rightNav img {
 }
 
 .bookBack {
-    height: 250px;
+    height: 238px;
     /* background-color: rgba(209, 206, 206, 0.212); */
-    width: 100%;
+    width: 165px;
     border-radius: 10px;
 }
 
