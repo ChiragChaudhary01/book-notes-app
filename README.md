@@ -115,7 +115,7 @@ Pull requests are welcome. For major changes, open an issue first to discuss.
 **Chirag Chaudhary**  
 B.Tech IT | MERN Developer | Tech Creator  
 - GitHub: [@ChiragChaudhary01](https://github.com/ChiragChaudhary01)  
-- LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/chirag-chaudhary-06a48825b/)
+- LinkedIn: [linkedin.com/in/chirag-chaudhary](https://www.linkedin.com/in/chirag-chaudhary-06a48825b/)
 
 ---
 
