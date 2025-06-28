@@ -69,8 +69,8 @@ http://localhost:3000
 
 ## 🌍 Live Demo
 
-> 🔗 GitHub Repo: [github.com/your-username/book-notes-app](https://github.com/your-username/book-notes-app)  
-> 🌐 Live Site: *(Add your Render/Vercel URL here if deployed)*
+> 🔗 GitHub Repo: [github.com/ChiragChaudhary01/book-notes-app](https://github.com/ChiragChaudhary01/book-notes-app) 
+> 🌐 Live Site: [Click here](https://book-notes-app-jlbq.onrender.com/)
 
 ---
 
@@ -115,7 +115,7 @@ Pull requests are welcome. For major changes, open an issue first to discuss.
 **Chirag Chaudhary**  
 B.Tech IT | MERN Developer | Tech Creator  
 - GitHub: [@ChiragChaudhary01](https://github.com/ChiragChaudhary01)  
-- LinkedIn: [linkedin.com/in/your-profile](https://www.linkedin.com/in/chirag-chaudhary-06a48825b/)
+- LinkedIn: [linkedin.com/in/chirag-chaudhary](https://www.linkedin.com/in/chirag-chaudhary-06a48825b/)
 
 ---
 
