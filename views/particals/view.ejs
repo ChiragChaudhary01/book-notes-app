@@ -1,0 +1,41 @@
+<%- include('header.ejs') %>
+
+<div class="mainBaapview">
+  <div class="mainview">
+    <div class="titleButton">
+      <h2><%= book.title %></h2>
+      <div class="buttons">
+        <a href="/edit/<%= book._id %>" class="btn">Edit</a>
+        <a href="/delete/<%= book._id %>" class="btn">Delete</a>
+      </div>
+    </div>
+    <P>by <%= book.author %></P>
+    <div class="colorDisplay imgBaapView">
+      <img
+        src="https://covers.openlibrary.org/b/olid/<%= book.cover_id %>-L.jpg"
+        alt="Cover of <%= book.title %>"
+        class="myImg imgView"
+        crossorigin="anonymous"
+      />
+    </div>
+    <h3>Full Notes</h3>
+    <p><%= book.notes %></p>
+    <h4>Date Read</h4>
+    <p><%= book.readDate %></p>
+    <h4>Rating</h4>
+    <p class="rating">
+      <% for (let i = 1; i <= 5; i++) { %> <% if (i <= book.rating) { %>
+      <i class="fas fa-star" style="color: gold"></i>
+      <% } else { %>
+      <i class="far fa-star" style="color: gold"></i>
+      <% } %> <% } %>
+    </p>
+  </div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+<script src="/js/backColor.js"></script>

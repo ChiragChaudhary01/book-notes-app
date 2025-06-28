@@ -1,0 +1,33 @@
+  <%- include('particals/header.ejs') %>
+  <div class="mainBaap">
+    <div class="main">
+      <h2>My Book Notes</h2>
+      <% if (books && books.length > 0) { %> <% books.forEach(book => { %>
+      <div class="books">
+        <div class="bookData">
+          <div class="bookBack colorDisplay">
+            <a href="/view/<%= book._id %>">
+              <img
+                src="https://covers.openlibrary.org/b/olid/<%= book.cover_id %>-M.jpg"
+                alt="Cover of <%= book.title %>" class="myImg"
+                crossorigin="anonymous"
+              />
+            </a>
+          </div>
+          <% if(book.title.length > 25){%>
+          <a href="/view/<%= book._id %>"
+            ><p class="bookTitle"><%= book.title.slice(0, 23)%>...</p></a
+          >
+          <% } else {%>
+          <a href="/view/<%= book._id %>"
+            ><p class="bookTitle"><%= book.title%></p></a
+          >
+          <% } %>
+          <p>By <%= book.author %></p>
+        </div>
+      </div>
+      <% });}%>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+  <script src="/js/backColor.js"></script>

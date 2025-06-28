@@ -1,0 +1,213 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    /* border-bottom: solid rgba(66, 66, 66, 0.137) 2px; */
+    align-items: center;
+    box-shadow: 0px 4px 4px 0 rgba(0, 30, 43, 0.1);
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .rightNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.rightNav a{
+    font-weight: 100;
+}
+
+header .rightNav img {
+    height: 6vh;
+    border-radius: 100px;
+}
+
+.mainBaap {
+    padding: 0 15vw;
+}
+
+.main {
+    margin: auto;
+    /* width: 70vw; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    /* background-color: brown; */
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+    gap: -100px;
+    height: 290px;
+    width: 17%;
+    padding: 10px;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.bookData {
+    font-size: 15px;
+    line-height: 8px;
+}
+
+.bookData a{
+    text-decoration: none;
+    color: black;
+}
+
+.bookTitle {
+    font-weight: 600;
+}
+
+.bookBack {
+    height: 250px;
+    /* background-color: rgba(209, 206, 206, 0.212); */
+    width: 100%;
+    border-radius: 10px;
+}
+
+.books img {
+    height: 190px;
+    width: 70%;
+    margin: 3vh;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+    /* Force all to match height */
+    /* object-fit: cover; */
+    /* Crop and fill the area */
+}
+
+.main h2 {
+    padding: 3vh 0 0;
+    width: 80vw;
+}
+
+.mainBaapRegister {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    padding: 3vh 10vw;
+}
+
+.mainBaapRegister .mainRegister {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: center; */
+    /* background-color: blue; */
+    width: 25vw;
+    gap: 1.5vh;
+    /* height: 70vh; */
+}
+
+.mainBaapRegister .mainRegister h2 {
+    font-weight: 900;
+}
+
+.mainRegister form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vh;
+    /* height: 60vh; */
+}
+
+.mainRegister form div{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1vh;
+    /* height: 8vh; */
+}
+
+.mainRegister form input {
+    border-radius: 8px;
+    /* height: 3.5vh; */
+    background-color: rgb(239, 240, 241);
+    border: none;
+    padding: 13px;
+    color: rgb(78, 78, 78);
+}
+
+.mainRegister form textarea {
+    border-radius: 8px;
+    /* height: 3.5vh; */
+    background-color: rgb(239, 240, 241);
+    border: none;
+    padding: 13px;
+    height: 10vh;
+}
+
+.mainRegister form .textarea {
+    height: 16vh;
+}
+
+.mainRegister form .buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2vh 0;
+}
+
+button{
+    height: 4vh;
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    background-color: rgba(137, 137, 245, 0.459);
+    border: none;
+}
+
+.titleButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgView {
+    margin: 5vh;
+    width: 24vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+.mainBaapview {
+    padding: 1vh 15vw ;
+}
+
+.imgBaapView {
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.mainview>p {
+    font-size: 13px;
+    color: rgb(156, 155, 155);
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
