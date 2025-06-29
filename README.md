@@ -51,8 +51,6 @@ MONGODB_URI = your_mongodb_connection_string
 PORT=3000
 ```
 
-> ⚠️ Your `.env` file is private and ignored via `.gitignore`
-
 ### 4️⃣ Run the App
 
 ```bash
