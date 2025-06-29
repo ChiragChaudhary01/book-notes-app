@@ -295,11 +295,11 @@ button {
     }
 
     .mainBaapRegister {
-        padding: 5vh 5vw;
+        padding: 5vh 7vw;
     }
 
-    .mainRegister {
-        width: 90vw;
+    .mainBaapRegister .mainRegister {
+        width: 100%;
     }
 
     /* .imgBaapView{
