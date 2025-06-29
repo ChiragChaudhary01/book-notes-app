@@ -1,25 +1,30 @@
 <%- include('header.ejs') %>
+<div class="mainBaapConfirm">
+  <div>
+    <h2>Did you mean:</h2>
+    <p>
+      <strong><%= suggestedTitle %></strong> by
+      <strong><%= suggestedAuthor %></strong>?
+    </p>
 
-<h2>Did you mean:</h2>
-<p><strong><%= suggestedTitle %></strong> by <strong><%= suggestedAuthor %></strong>?</p>
+    <form action="/book" method="POST">
+      <!-- Hidden fields to pass data forward -->
+      <input type="hidden" name="id" value="<%= id %>" />
+      <input type="hidden" name="title" value="<%= suggestedTitle %>" />
+      <input type="hidden" name="author" value="<%= suggestedAuthor %>" />
+      <input type="hidden" name="rating" value="<%= rating %>" />
+      <input type="hidden" name="readDate" value="<%= readDate %>" />
+      <input type="hidden" name="notes" value="<%= notes %>" />
+      <input type="hidden" name="cover_id" value="<%= cover_id %>" />
+      <input type="hidden" name="confirmed" value="true" />
 
-<form action="/book" method="POST">
-  <!-- Hidden fields to pass data forward -->
-  <input type="hidden" name="id" value="<%= id %>"> 
-  <input type="hidden" name="title" value="<%= suggestedTitle %>">
-  <input type="hidden" name="author" value="<%= suggestedAuthor %>">
-  <input type="hidden" name="rating" value="<%= rating %>">
-  <input type="hidden" name="readDate" value="<%= readDate %>">
-  <input type="hidden" name="notes" value="<%= notes %>">
-  <input type="hidden" name="cover_id" value="<%= cover_id %>">
-  <input type="hidden" name="confirmed" value="true">
+      <button type="submit">✅ Yes, Save Book</button>
+    </form>
 
-  
-  <button type="submit">✅ Yes, Save Book</button> 
-</form>
+    <br />
 
-<br>
-
-<form action="/register" method="GET">
-  <button type="submit">❌ No, Let Me Edit</button>
-</form>
+    <form action="/register" method="GET">
+      <button type="submit">❌ No, Let Me Edit</button>
+    </form>
+  </div>
+</div>

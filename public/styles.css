@@ -206,6 +206,14 @@ button {
     display: inline-block;
 }
 
+.mainBaapConfirm {
+    padding: 5vh 10vw;
+}
+
+.mainBaapConfirm button {
+    font-size: 12px;
+}
+
 /* Tablets (portrait and smaller) */
 @media (max-width: 1024px) {
     .mainBaap {
