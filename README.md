@@ -67,9 +67,9 @@ http://localhost:3000
 
 ## 🌍 Live Demo
 
-> 🔗 GitHub Repo: [github.com/ChiragChaudhary01/book-notes-app](https://github.com/ChiragChaudhary01/book-notes-app)
+> 🌐 Live Site: [Click here got Live Site](https://book-notes-app-jlbq.onrender.com/)
 
-> 🌐 Live Site: [Click here](https://book-notes-app-jlbq.onrender.com/)
+> 🔗 GitHub Repo: [github.com/ChiragChaudhary01/book-notes-app](https://github.com/ChiragChaudhary01/book-notes-app)
 
 ---
 
